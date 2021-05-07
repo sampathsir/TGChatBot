@@ -1,0 +1,64 @@
+{
+  "name": "TGChatBot",
+  "description": "Simple ChatBot in Telethon.",
+  "logo": "https://camo.githubusercontent.com/23baa96597c3c43fc039d4d943c272b9792dafbd6a8d50f719f1ca8687ff7bc8/68747470733a2f2f692e696d6775722e636f6d2f5057697a6e7a312e706e67",
+  "keywords": [
+    "telegram",
+    "chatbot",
+    "plugin",
+    "telegram-chatbot",
+    "productivity"
+  ],
+  "repository": "https://github.com/CyberBoyAyush/TGChatBot",
+  "website": "https://github.com/CyberBoyAyush/TGChatBot",
+  "success_url": "https://github.com/CyberBoyAyush/TGChatBot",
+  "env": {
+    "ENV": {
+      "description": "Setting this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
+    "BOT_TOKEN": {
+      "description": "Your Bot Token.",
+      "value": ""
+    },
+    "CUSTOM_IMG": {
+      "description": "Link Of A Image For Start.",
+      "value": "",
+      "required": false
+    },
+    "DUMB_CHAT": {
+      "description": "Group ID Where Your Logs Will Go.",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Your Owner ID",
+      "value": ""
+    },
+    "CUSTOM_START": {
+      "description": "Custom Message For Start.",
+      "value": "",
+      "required": false
+    },
+    "APP_ID": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Please do not steal",
+      "value": ""
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
